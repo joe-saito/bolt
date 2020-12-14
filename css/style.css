@@ -17,9 +17,9 @@ body {
 
 .header {
   width: 100%;
-  background-color: #fff;
   position: fixed;
   padding: 15px 0;
+  background-color: #fff;
   z-index: 10;
 }
 .my-bolt {
@@ -34,6 +34,9 @@ body {
   background-color: #74cfae;
 }
 
+main {
+  padding-top: 66px;
+}
 .title {
   width: auto;
   background-color: #f2f2f2;
@@ -75,9 +78,9 @@ body {
   text-align: center;
   color: #fff;
 }
-.section-inner_contents h1 {
+.section-inner_contents h3 {
   font-size: 24px;
-  margin-bottom: 35px;
+  margin: 35px 0;
 }
 .section-inner_contents p {
   font-size: 20px;
@@ -91,7 +94,7 @@ body {
 .article-inner {
   padding: 60px 0 70px 0;
 }
-.article-inner h1 {
+.article-inner h4 {
   font-size: 24px;
   text-align: center;
   color: #333;
@@ -153,7 +156,7 @@ body {
   padding: 70px 0 100px 0;
   color: #f2f2f2;
 }
-.skill-section-inner h1 {
+.skill-section-inner h5 {
   font-size: 24px;
   text-align: center;
 }
@@ -213,6 +216,6 @@ body {
   color: #fff;
   padding: 20px 0 25px 0;
 }
-.footer-inner h1 {
+.footer-inner p {
   float: right;
 }
