@@ -17,10 +17,14 @@ body {
 
 .header {
   width: 100%;
-  position: fixed;
-  padding: 15px 0;
   background-color: #fff;
+  position: fixed;
+  top: 0%;
+  left: 0%;
   z-index: 10;
+}
+.header-inner {
+  padding: 15px 0;
 }
 .my-bolt {
   float: left;
@@ -45,7 +49,7 @@ main {
   padding: 250px 0;
 }
 .title h1,
-.title h2 {
+.title p {
   text-align: center;
 }
 .title h1 {
@@ -53,7 +57,7 @@ main {
   font-weight: 700;
   color: #74cfae;
 }
-.title h2 {
+.title p {
   font-size: 30px;
   color: #c0c0c0;
   margin-top: 20px;
@@ -65,26 +69,22 @@ main {
   width: auto;
 }
 .section-inner {
-  height: 295px;
   padding-top: 50px;
-}
-.section-inner_img {
-  position: absolute;
-  left: 15%;
+  display: flex;
+  justify-content: space-around;
 }
 .section-inner_contents {
-  position: absolute;
-  left: 40%;
   text-align: center;
   color: #fff;
 }
 .section-inner_contents h2 {
   font-size: 24px;
-  margin: 35px 0;
+  margin-top: 30px;
 }
 .section-inner_contents p {
   font-size: 20px;
   line-height: 150%;
+  margin-top: 35px;
 }
 
 .article {
@@ -104,7 +104,7 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 40px 0 90px 0;
+  margin-top: 40px;
 }
 .img-container_item {
   margin: 0 100px 80px 0;
@@ -124,6 +124,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 90px;
 }
 .article-inner_message-container p {
   text-align: center;
@@ -160,7 +161,7 @@ main {
   text-align: center;
 }
 .skill-list {
-  padding-top: 50px;
+  margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -173,7 +174,7 @@ main {
   margin-right: 0px;
 }
 .skill-item figcaption {
-  padding-top: 15px;
+  margin-top: 15px;
   text-align: center;
   font-size: 16px;
 }
@@ -215,5 +216,5 @@ main {
   padding: 20px 0 25px 0;
 }
 .footer-inner p {
-  float: right;
+  text-align: right;
 }
