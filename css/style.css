@@ -78,7 +78,7 @@ main {
   text-align: center;
   color: #fff;
 }
-.section-inner_contents h3 {
+.section-inner_contents h2 {
   font-size: 24px;
   margin: 35px 0;
 }
@@ -94,7 +94,7 @@ main {
 .article-inner {
   padding: 60px 0 70px 0;
 }
-.article-inner h4 {
+.article-inner h2 {
   font-size: 24px;
   text-align: center;
   color: #333;
@@ -108,7 +108,6 @@ main {
 }
 .img-container_item {
   margin: 0 100px 80px 0;
-  width:calc(33.33% - 100px);
   opacity: 0.7;
   transition: all 0.3s;
 }
@@ -156,7 +155,7 @@ main {
   padding: 70px 0 100px 0;
   color: #f2f2f2;
 }
-.skill-section-inner h5 {
+.skill-section-inner h2 {
   font-size: 24px;
   text-align: center;
 }
@@ -169,7 +168,6 @@ main {
 }
 .skill-item {
   margin-right: 180px;
-  width: calc(25% - 180px);
 }
 .skill-item:last-child {
   margin-right: 0px;
