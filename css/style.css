@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway","Lato" sans-serif;
 }
 
 .clearfix::after {
@@ -19,8 +19,8 @@ body {
   width: 100%;
   background-color: #fff;
   position: fixed;
-  top: 0%;
-  left: 0%;
+  top: 0;
+  left: 0;
   z-index: 10;
 }
 .header-inner {
@@ -36,6 +36,9 @@ body {
   font-size: 12px;
   color: #fff;
   background-color: #74cfae;
+}
+.header_contact-icon a {
+  display: block;
 }
 
 main {
@@ -82,6 +85,7 @@ main {
   margin-top: 30px;
 }
 .section-inner_contents p {
+  width: 700px;
   font-size: 20px;
   line-height: 150%;
   margin-top: 35px;
@@ -107,18 +111,26 @@ main {
   margin-top: 40px;
 }
 .img-container_item {
-  margin: 0 100px 80px 0;
   opacity: 0.7;
   transition: all 0.3s;
+}
+.img-container_item a {
+  display: block;
 }
 .img-container_item:hover {
   opacity: 1;
 }
-.img-container_item:nth-child(3n) {
-  margin-right: 0;
+.img-container_item:nth-child(-n+3) {
+  margin-left: 100px;
+}
+.img-container_item:first-child {
+  margin-left: 0;
 }
 .img-container_item:nth-child(n+4) {
-  margin-bottom: 0;
+  margin: 80px 0 0 100px;
+}
+.img-container_item:nth-child(4) {
+  margin-left: 0;
 }
 .article-inner_message-container {
   display: flex;
@@ -130,6 +142,7 @@ main {
   text-align: center;
   line-height: 140%;
   color: #333;
+  width: 500px;
 }
 .article-inner_message-container a {
   margin-left: 90px;
@@ -168,10 +181,10 @@ main {
   align-items: center;
 }
 .skill-item {
-  margin-right: 180px;
+  margin-left: 180px;
 }
-.skill-item:last-child {
-  margin-right: 0px;
+.skill-item:first-child {
+  margin-left: 0px;
 }
 .skill-item figcaption {
   margin-top: 15px;
@@ -199,6 +212,9 @@ main {
   padding: 26px 0;
   text-align: center;
   transition: all 0.3s;
+}
+.sns-icon a {
+  display: block;
 }
 .sns-icon:hover {
   background-color: #fff;
