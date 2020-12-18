@@ -1,8 +1,9 @@
 @charset "UTF-8";
 
 body {
-  font-family: "Raleway","Lato" sans-serif;
+  font-family: "Lato",sans-serif;
 }
+
 
 .clearfix::after {
   content: "";
@@ -10,10 +11,18 @@ body {
   clear: both;
 }
 
+h1,
+h2 {
+  font-family: "Raleway";
+}
+
+
 .inner {
   width: 1100px;
   margin: 0 auto;
+  text-align: center;
 }
+
 
 .header {
   width: 100%;
@@ -23,86 +32,92 @@ body {
   left: 0;
   z-index: 10;
 }
+
 .header-inner {
   padding: 15px 0;
 }
+
 .my-bolt {
   float: left;
   color: #4e4e4e;
 }
+
 .header_contact-icon {
   float: right;
   padding: 12px 14px;
   font-size: 12px;
   color: #fff;
   background-color: #74cfae;
-}
-.header_contact-icon a {
   display: block;
 }
+
 
 main {
   padding-top: 66px;
 }
+
 .title {
-  width: auto;
   background-color: #f2f2f2;
 }
+
 .title-inner {
   padding: 250px 0;
 }
-.title h1,
-.title p {
-  text-align: center;
-}
+
 .title h1 {
   font-size: 90px;
   font-weight: 700;
   color: #74cfae;
 }
+
 .title p {
   font-size: 30px;
   color: #c0c0c0;
   margin-top: 20px;
 }
 
+
 .section {
   position: relative;
   background-color: #74cfae;
-  width: auto;
 }
+
 .section-inner {
   padding-top: 50px;
   display: flex;
   justify-content: space-around;
 }
+
 .section-inner_contents {
-  text-align: center;
   color: #fff;
 }
+
 .section-inner_contents h2 {
   font-size: 24px;
   margin-top: 30px;
 }
+
 .section-inner_contents p {
-  width: 700px;
+  width: 650px;
   font-size: 20px;
   line-height: 150%;
   margin-top: 35px;
 }
 
+
 .article {
-  width: auto;
   background-color: #f2f2f2;
 }
+
 .article-inner {
   padding: 60px 0 70px 0;
 }
+
 .article-inner h2 {
   font-size: 24px;
-  text-align: center;
   color: #333;
 }
+
 .article-inner_img-container {
   display: flex;
   flex-wrap: wrap;
@@ -110,40 +125,41 @@ main {
   align-items: center;
   margin-top: 40px;
 }
+
 .img-container_item {
   opacity: 0.7;
   transition: all 0.3s;
+  margin: 80px 0 0 100px;
 }
+.img-container_item:nth-child(-n+3) {
+  margin-top: 0;
+}
+
+.img-container_item:nth-child(3n+1) {
+  margin-left: 0;
+}
+
 .img-container_item a {
   display: block;
 }
+
 .img-container_item:hover {
   opacity: 1;
 }
-.img-container_item:nth-child(-n+3) {
-  margin-left: 100px;
-}
-.img-container_item:first-child {
-  margin-left: 0;
-}
-.img-container_item:nth-child(n+4) {
-  margin: 80px 0 0 100px;
-}
-.img-container_item:nth-child(4) {
-  margin-left: 0;
-}
+
 .article-inner_message-container {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   margin-top: 90px;
 }
+
 .article-inner_message-container p {
-  text-align: center;
-  line-height: 140%;
+  line-height: 130%;
   color: #333;
-  width: 500px;
+  width: 460px;
 }
+
 .article-inner_message-container a {
   margin-left: 90px;
   padding: 14px 20px;
@@ -151,28 +167,32 @@ main {
   color: #f2f2f2;
   font-size: 12px;
 }
+
 .article-inner_message-container a,
 .header-inner a {
   transition: all 0.3s;
   text-decoration: none;
 }
+
 .article-inner_message-container a:hover,
 .header-inner a:hover {
   color: #333;
 }
 
+
 .skill-section {
-  width: auto;
   background-color: #4e4e4e;
 }
+
 .skill-section-inner {
   padding: 70px 0 100px 0;
   color: #f2f2f2;
 }
+
 .skill-section-inner h2 {
   font-size: 24px;
-  text-align: center;
 }
+
 .skill-list {
   margin-top: 50px;
   display: flex;
@@ -180,57 +200,67 @@ main {
   justify-content: center;
   align-items: center;
 }
+
 .skill-item {
   margin-left: 180px;
 }
+
 .skill-item:first-child {
   margin-left: 0px;
 }
+
 .skill-item figcaption {
   margin-top: 15px;
-  text-align: center;
   font-size: 16px;
 }
+
 .skill-item img {
   max-width: 100%;
 }
 
+
 .nav {
-  width: auto;
   background-color: #f2f2f2;
 }
+
 .nav-inner {
   padding: 200px 0;
 }
+
 .sns-wrap {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .sns-icon {
   width: 185px;
-  padding: 26px 0;
-  text-align: center;
   transition: all 0.3s;
 }
+
 .sns-icon a {
+  padding: 26px 0;
   display: block;
 }
+
 .sns-icon:hover {
   background-color: #fff;
 }
+
 .my-sns {
   color: #74cfae;
 }
 
+
 .footer {
-  width: auto;
   background-color: #74cfae;
 }
+
 .footer-inner {
   color: #fff;
   padding: 20px 0 25px 0;
 }
+
 .footer-inner p {
   text-align: right;
 }
