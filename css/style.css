@@ -11,15 +11,19 @@ body {
   clear: both;
 }
 
-h1,
-h2 {
-  font-family: "Raleway";
-}
-
 
 .inner {
   width: 1100px;
   margin: 0 auto;
+}
+
+
+.font-raleway {
+  font-family: "Raleway",sans-serif;
+}
+
+
+.text-center {
   text-align: center;
 }
 
@@ -51,6 +55,10 @@ h2 {
   display: block;
 }
 
+.hamburger-menu {
+  display: none;
+}
+
 
 main {
   padding-top: 66px;
@@ -78,7 +86,6 @@ main {
 
 
 .section {
-  position: relative;
   background-color: #74cfae;
 }
 
@@ -141,6 +148,7 @@ main {
 
 .img-container_item a {
   display: block;
+  height: 300px;
 }
 
 .img-container_item:hover {
@@ -263,4 +271,127 @@ main {
 
 .footer-inner p {
   text-align: right;
+}
+
+
+@media screen and (max-width: 1199px) {
+
+.inner {
+  width: 97%;
+}
+
+
+.section-inner {
+  padding: 50px 0 25px 0;
+  display: block;
+  text-align: center;
+}
+
+.section-inner_contents h2 {
+  margin-top: 20px;
+}
+
+.section-inner_contents p {
+  width: auto;
+}
+
+
+.article-inner_img-container {
+  display: block;
+  text-align: center;
+}
+
+.img-container_item {
+  margin: 0;
+}
+
+.img-container_item:nth-child(3n+1) {
+  margin-top: 80px;
+}
+
+.img-container_item:first-child {
+  margin-top: 40px;
+}
+
+.article-inner_message-container {
+  display: block;
+  margin-top: 80px;
+}
+
+.article-inner_message-container p {
+  width: auto;
+}
+
+.article-inner_message-container a {
+  display: inline-block;
+  margin-left: 0;
+  margin-top: 40px;
+}
+
+.skill-list {
+  display: block;
+}
+
+.skill-item {
+  margin-left: 0;
+  margin-top: 88px;
+}
+
+.skill-item:first-child {
+  margin-top: 0;
+}
+
+}
+
+
+@media screen and (max-width: 767px) {
+
+.header_contact-icon {
+  display: none;
+}
+
+.hamburger-menu {
+  display: block;
+  float: right;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.my-menu {
+  float: right;
+  color: #c0c0c0;
+}
+
+
+.title-inner {
+  padding: 160px 0 130px 0;
+}
+
+.title-inner h1 {
+  font-size: 80px;
+}
+
+.title-inner p {
+  font-size: 30px;
+}
+
+.wrapper {
+  overflow: hidden;
+}
+.nav-inner {
+  width: calc(100% - 30px);
+  padding: 50px 0;
+  margin: 0 15px;
+}
+
+.sns-wrap {
+  display: block;
+}
+
+.sns-icon {
+  width: auto;
+}
+
+
 }
