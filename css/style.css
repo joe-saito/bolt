@@ -251,7 +251,7 @@ main {
 
 .sns-icon a {
   padding: 26px 0;
-  display: block;
+  display: inline-block;
 }
 
 .sns-icon:hover {
@@ -360,17 +360,37 @@ main {
     display: none;
   }
 
+
   .hamburger-menu {
-    display: block;
     float: right;
+    display: block;
+    position: relative;
+    width: 10px;
+    height: 10px;
     padding: 10px;
+    cursor: pointer;
     border: 1px solid #ddd;
     border-radius: 4px;
   }
 
-  .my-menu {
-    float: right;
-    color: #c0c0c0;
+  .ham-line {
+    position: absolute;
+    left: 10px;
+    width: 10px;
+    height: 2px;
+    background-color: #ddd;
+  }
+
+  .ham-line1 {
+    top: 10px;
+  }
+  
+  .ham-line2 {
+    top: 15px;
+  }
+
+  .ham-line3 {
+    top: 20px;
   }
 
 
@@ -395,8 +415,10 @@ main {
     flex-direction: column;
   }
 
-  .sns-icon {
-    width: auto;
+  .sns-icon,
+  .sns-icon a {
+    width: 100%;
   }
+
 
 }
