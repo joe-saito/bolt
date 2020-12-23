@@ -251,7 +251,7 @@ main {
 
 .sns-icon a {
   padding: 26px 0;
-  display: inline-block;
+  display: block;
 }
 
 .sns-icon:hover {
@@ -359,7 +359,6 @@ main {
   .header_contact-icon {
     display: none;
   }
-
 
   .hamburger-menu {
     float: right;
